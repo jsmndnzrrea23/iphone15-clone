@@ -162,7 +162,7 @@ const VideoCarousel = () => {
   };
 
   const handleLoadedMetadata = (
-    i: number,
+    // i: number,
     e: React.SyntheticEvent<HTMLVideoElement, Event>,
   ) => setLoadedData((prevData) => [...prevData, e]);
 
@@ -190,7 +190,7 @@ const VideoCarousel = () => {
                       isPlaying: true,
                     }));
                   }}
-                  onLoadedMetadata={(e) => handleLoadedMetadata(i, e)}
+                  onLoadedMetadata={(e) => handleLoadedMetadata(e)}
                 >
                   <source src={list.video} type="video/mp4" />
                 </video>
