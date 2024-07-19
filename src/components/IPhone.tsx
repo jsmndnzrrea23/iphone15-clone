@@ -6,11 +6,12 @@ Source: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841
 Title: Apple iPhone 15 Pro Max Black
 */
 
-import React, { useEffect, useRef } from "react";
+// @ts-nocheck
+import { useEffect } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
-function IPhone(props) {
+function IPhone(props: any) {
   const { nodes, materials } = useGLTF("/models/scene.glb");
 
   const texture = useTexture(props.item.img);

@@ -12,8 +12,8 @@ const Features = () => {
     gsap.to("#exploreVideo", {
       scrollTrigger: {
         trigger: "#exploreVideo",
-        toggleActions: "play pause reverse restart",
-        start: "-10% bottom",
+        toggleActions: "play resume play resume",
+        start: "10% bottom",
       },
       onComplete: () => {
         videoRef.current?.play();
@@ -60,7 +60,7 @@ const Features = () => {
             </h2>
           </div>
 
-          <div className="flex-center flex-col sm:px-10">
+          <div className="flex-center flex-col gap-5 sm:px-10">
             <div className="relative flex h-[50vh] w-full items-center">
               <video
                 playsInline

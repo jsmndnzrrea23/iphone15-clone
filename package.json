@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.107.0",
+    "@react-three/eslint-plugin": "^0.1.1",
     "@react-three/fiber": "^8.16.8",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
